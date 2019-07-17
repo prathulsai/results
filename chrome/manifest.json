@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+
+
+"name": "RESULT",
+"description": "This extension will calculate the total GPA and it will show it up.",
+"version": "1.0",
+
+
+"content_scripts": [   
+{ "run_at" :"document_end",
+"matches": ["http://202.63.105.184/RESULT/result7.jsp?*"],
+"js": ["jquery-1.11.3.min.js","script.js"],
+"css":["css/mycss.css"]
+} ],
+
+
+"web_accessible_resources":["img/*.png"]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script >
+		var grade=[];
+		grade['O']=10;
+		grade['A+']=9;
+		grade['A']=8;
+		grade['B+']=7;
+		grade['B']=6;
+		grade['C']=5;
+		grade['F']=0;
+		grade['AB']=0;
+
+		function fun(){
+		var a=document.getElementById('grades').value;
+		var b=document.getElementById('credits').value;
+		var aa=a.split(' ');
+		var bb=b.split(' ');
+
+		var total=0;
+		for (var i = 0; i < bb.length; i++) {
+			total = total + grade[aa[i]]*parseInt(bb[i]);
+		}
+		total = total/24;
+		document.getElementById('out').value=total;
+		
+
+	}
+	</script>
+</head>
+<body>
+	<input type="text" id="grades">
+	<input type="text" id="credits">
+	<input type="submit" name="submit" onclick="fun()">
+	<input type="text" id="out">
+	<div>
+		1-1<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=7&name=BTECH11R16_1214" target="_blank">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=7&name=BTECH11R16_1214"target="_blank">link 1</a><br><br>
+		1-2<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=2&name=BTECH_1235"target="_blank">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=2&name=BTECH_1235"target="_blank">link 2</a><br><br>
+		2-1<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=7&name=BTECH_1261"target="_blank">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=7&name=BTECH_1261"target="_blank">link 2</a><br><br>
+		2-2<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=7&name=BTECH_1284"target="_blank">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=7&name=BTECH_1284"target="_blank">link 2</a><br><br>
+		3-1<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=7&name=BTECH_1315"target="_blank">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=7&name=BTECH_1315"target="_blank">link 2</a><br><br>
+		1-1(supply)<br>
+		<a href="http://202.63.105.184/RESULT/homepage.jsp?id=7&name=BTECH_1324">link 1</a>
+		<a href="http://202.63.105.185/RESULT/homepage.jsp?id=7&name=BTECH_1324">link 2</a>
+
+	</div>
+    <form>
+<input type="email" id="email">
+<input type="submit">
+</form>
+</body>
+</html>
